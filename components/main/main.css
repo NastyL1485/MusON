@@ -1,0 +1,177 @@
+/* .mainInfo{
+    height: 900px;
+}
+
+.title{
+    top: 206.32px;
+    height: ;
+}
+
+.Svgmus{
+    position: relative;
+    top: 206.32px;
+    left: 272.71px;
+    border: 3px 3px 3px 3px;
+}
+
+.Svgon{
+    position: relative;
+    top: 356.1px;
+    left: 814.9px;
+    border: 1px 1px 1px 1px;
+}
+
+.buttons{
+    font-family: Montserrat ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+
+} */
+
+.input{
+    position: static;
+    width: 198px;
+    height: 59px;
+    top: 624px;
+    left: 1020px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0px;
+    color: white;
+    background-color: #D93304;
+}
+
+.registration{
+    position: static;
+    width: 379px;
+    height: 59px;
+    top: 703px;
+    left: 839px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px 2px 2px 2px;
+    opacity: 0px;
+    background: #ADE320;    
+    color: white;
+    border: 2px solid white;
+}
+
+.main{
+    /* display: grid; */
+    /* grid-template-columns: 325px 880px 235px;
+    grid-template-rows: 442px 160px; */
+    /* grid-template-columns: 689px 1fr 1 fr;
+    grid-template-rows: 1 fr; */
+    /* grid-template-areas: 
+    "Svghuman title Svgrock"
+    "Svghuman buttons Svgrock" */
+    
+
+    display: flex;
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+.human{
+    /* position: absolute;
+    grid-area: Svghuman; */
+
+    /* width: 580.17px;
+    height: 899.47px;
+    top: 197.1px;
+    left: -40px;
+
+    rotate: 7.24 deg;
+    z-index: 10; */
+    /* grid-column: 1 / 2; */
+    
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1; */
+
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    /* z-index: 2; */
+}
+
+.centralPart{
+    display: grid;
+    /* grid-column: 2 / 3; */
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative; */
+    /* left: -580px; */
+    /* top: 94px; */
+    position: absolute;
+    left: 300px;
+    top: 76px;
+    grid-template-rows: auto auto;
+    grid-gap: 48px;
+    /* z-index: 1; */
+}
+
+.title{
+    /* grid-area: title; */
+    display: grid;
+    grid-template-columns: 920px;
+    grid-template-rows: 200px 222px;
+    
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; */
+    /* justify-content: center; */
+}
+
+.buttons{
+    /* grid-area: buttons; */
+    display: grid;
+    justify-items: end;
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    font-family: Montserrat ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+    grid-gap: 20px;
+}
+
+.rock{
+    /* grid-area: Svgrock; */
+    
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    position: absolute;
+    /* left: 300px; */
+    /* top: -186px;
+    right: -338px; */
+    left: 950px;
+    top: -270px;
+}
+
+.Mus{
+    grid-row: 1;
+    justify-self: start;
+}
+
+.On{
+    grid-row: 2;
+justify-self: end;
+}
