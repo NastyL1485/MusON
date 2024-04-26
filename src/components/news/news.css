@@ -1,0 +1,149 @@
+.NewsBlock{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1100px;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.News{
+    display: grid;
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    top: 0px;
+    left: 120px;
+    border-radius: 90px;
+    background-color: #FFFFFF;
+    grid-template-rows: 164px 536px;
+    z-index: 5;
+}
+
+.Text{
+    position: relative;
+    top: 60px;
+    left: 58px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.MoreNews{
+    position: relative;
+    width: Hug (181px)px;
+    height: Hug (52px)px;
+    top: 20px;
+    left: 468px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-radius: 90px 90px 90px 90px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #8C8C8C;
+    color: #8C8C8C;
+}
+
+.NewsBlock{
+    position: relative;
+    z-index: 10;
+}
+
+p{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 43.88px;
+    text-align: left;
+    color: #22908B;
+}
+
+.BigNews{
+    position: absolute;
+    width: 600px;
+    height: 536px;
+    z-index: 1;
+}
+
+.LittleNews{
+    position:absolute;
+    display: grid;
+    width: 600px;
+    height: 536px;
+    left: 600px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 600px;
+}
+
+.UpNews{
+    z-index: 10;
+}
+
+.DownNews{
+    z-index: 10;
+}
+
+.ImageOfNews1{
+    position: relative;
+    width: 531px;
+    height: 467px;
+    left: 58px;
+    border: 3px 3px 3px 3px;
+    z-index: 2;
+    border: 3px solid #22908B;
+    background-color: #22908B59;
+    z-index: 5;
+    background-image: url(../../img/ON.png);
+}
+
+.ImageOfNews2{
+    position: absolute;
+    width: 493px;
+    height: 200px;
+    border: 3px 3px 3px 3px;
+    z-index: 2;
+    left: 44px;
+    background-color: #B2D8D6;
+    border: 3px solid #22908B;
+    z-index: 5;
+    background-image: url(../../img/ON.png);
+}
+
+.ButtonOfNews1{
+    position: relative;
+    left: 15px;
+    top: -152px;
+    width: 252px;
+    height: 52px;
+    border-radius: 90px 90px 90px 90px;
+    background-color: #22908B;
+    z-index: 6;
+}
+
+.ButtonOfNews2{
+    position: relative;
+    width: 252px;
+    height: 52px;
+    top: 108px;
+    border-radius: 90px 90px 90px 90px;
+    background-color: #22908B;
+    z-index: 6;
+}
+
+.TitleOfButton{
+    position: absolute;
+    width: 192px;
+    height: 22px;
+    top: 15px;
+    left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #FFFFFF;
+}
+
+.Headphones{
+    position: absolute;
+    z-index: 4;
+    top: 400px;
+    right: -75px;
+}

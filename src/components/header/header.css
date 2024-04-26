@@ -1,0 +1,27 @@
+.header {
+    color: blue;
+    background-color:#ADE320;
+    height: 60px;
+}
+
+.header_row{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+}
+
+/* .header_nav{
+
+} */

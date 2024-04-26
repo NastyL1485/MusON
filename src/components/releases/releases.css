@@ -1,0 +1,43 @@
+.last{
+  margin-top: 120px;
+  max-height: 450px;
+  border: 1 px solid #fff;
+  display: flex;
+  overflow-x: auto;
+}
+
+.last::-webkit-scrollbar{
+  width: 0;
+}
+
+.last .card{
+  min-width: 400px;
+  height: 400px;
+  line-height: 362px;
+  margin-right: 3px;
+}
+
+.scrolling{
+  background-color: #fff;
+  height: 700px;;
+}
+
+h1{
+  position: relative;
+  top: 60px;
+  color: #ADE320;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43.88px;
+  text-align: center;
+}
+
+.releases{
+  z-index: 10;
+}
+
+.hands{
+  position: relative;
+  top: -160px;
+}
