@@ -3,8 +3,18 @@ import Svghuman from '../svgHuman/SvgHuman';
 import Svgmus from '../svgMus/SvgMus';
 import Svgon from '../svgOn/SvgOn';
 import Svgrock from '../svgRock/SvgRock';
+import {useNavigate} from 'react-router-dom';
+
 
 function Main(){
+
+    const navigate = useNavigate();
+
+
+    const handleRegistration = () => {
+        navigate('./Reg.jsx')
+    }
+
     return(
         <div className='main'>
             <div className='human'>
@@ -21,7 +31,7 @@ function Main(){
                 </div>
                 <div className='buttons'>
                     <button className='input'>Войти</button>
-                    <button className='registration'>Зарегистрироваться</button>
+                    <button onClick={handleRegistration} className='registration'>Зарегистрироваться</button>
                 </div>
             </div>
             <div className='rock'>

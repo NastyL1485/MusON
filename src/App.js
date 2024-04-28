@@ -1,21 +1,21 @@
 import './styles/App.css';
 import './components/header/Header';
-import Header from './components/header/Header';
-import News from './components/news/News';
-import Main from './components/main/Main';
-import Releases from './components/releases/Releases';
-// import Svghuman from './components/svgHuman/SvgHuman';
-// import Svgmus from './components/svgMus/SvgMus';
-// import Svgon from './components/svgOn/SvgOn';
-// import Svgrock from './components/svgRock/SvgRock';
+import React from 'react';
+import MainPage from './components/MainPage/MainPage';
+import {Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Registration from './components/registration/Reg';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <News />
-      <Releases />
+        <Router>
+            <Routes>
+                <Route path="/" exact component={MainPage}></Route>
+                <Route path="/registration" component={Registration} />
+            </Routes>
+        </Router>
     </div>
   );
 }
