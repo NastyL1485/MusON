@@ -1,11 +1,15 @@
 .NewsBlock{
-    position: relative;
+    position: absolute;
     display: flex;
-    width: 100%;
+    width: 1473px;
     height: 1100px;
-    z-index: 10;
+    z-index: 9;
+    top: -12px;
+    left: -130px;
+    /* margin-left: -130px; */
     overflow-x: hidden;
     overflow-y: hidden;
+    background-color: #ADE320; 
 }
 
 .News{
@@ -13,7 +17,7 @@
     position: relative;
     width: 1200px;
     height: 700px;
-    top: 0px;
+    top: 2px;
     left: 120px;
     border-radius: 90px;
     background-color: #FFFFFF;
@@ -21,20 +25,28 @@
     z-index: 5;
 }
 
-.Text{
+.Title{
     position: relative;
-    top: 60px;
+    top: 52px;
+    left: 0px;
+    height: 64px;
+    width: 1200px;
+}
+
+.Text{
+    position: absolute;
+    top: 0px;
     left: 58px;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
 
 .MoreNews{
-    position: relative;
-    width: Hug (181px)px;
-    height: Hug (52px)px;
-    top: 20px;
-    left: 468px;
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    top: 4px;
+    left: 961px;
     padding: 15px 30px 15px 30px;
     gap: 10px;
     border-radius: 90px 90px 90px 90px;
@@ -43,9 +55,9 @@
     color: #8C8C8C;
 }
 
-.NewsBlock{
+.NewsB{
     position: relative;
-    z-index: 10;
+    z-index: 9;
 }
 
 p{
@@ -78,11 +90,12 @@ p{
 }
 
 .DownNews{
+    position: relative;
     z-index: 10;
 }
 
 .ImageOfNews1{
-    position: relative;
+    position: absolute;
     width: 531px;
     height: 467px;
     left: 58px;
@@ -91,7 +104,6 @@ p{
     border: 3px solid #22908B;
     background-color: #22908B59;
     z-index: 5;
-    background-image: url(../../img/ON.png);
 }
 
 .ImageOfNews2{
@@ -104,13 +116,12 @@ p{
     background-color: #B2D8D6;
     border: 3px solid #22908B;
     z-index: 5;
-    background-image: url(../../img/ON.png);
 }
 
 .ButtonOfNews1{
     position: relative;
-    left: 15px;
-    top: -152px;
+    left: 180px;
+    top: 308px;
     width: 252px;
     height: 52px;
     border-radius: 90px 90px 90px 90px;
@@ -123,6 +134,7 @@ p{
     width: 252px;
     height: 52px;
     top: 108px;
+    left: 161px;
     border-radius: 90px 90px 90px 90px;
     background-color: #22908B;
     z-index: 6;

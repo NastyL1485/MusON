@@ -12,7 +12,7 @@ function Main(){
 
 
     const handleRegistration = () => {
-        navigate('./Reg.jsx')
+        navigate('reg')
     }
 
     return(

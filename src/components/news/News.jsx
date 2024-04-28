@@ -10,7 +10,7 @@ function News() {
                     <div className='Text'><p>Горячие новости</p></div>
                     <button className='MoreNews'>ещё новости</button>
                 </div>
-                <div className='NewsBlock'>
+                <div className='NewsB'>
                     <div className='BigNews'>
                         <div className='ImageOfNews1'></div>
                         <div className='NameOfNews'></div>

@@ -5,7 +5,7 @@ function Releases() {
     return(
         <div className="releases">
             <div className="scrolling">
-            <h1>Свежие релизы</h1>
+            <h2>Свежие релизы</h2>
                 <div className="last">
                     <div className="card">
                         <img src={require('D:/MusON/muson/src/components/releases/card1.png')} alt='card1'></img>

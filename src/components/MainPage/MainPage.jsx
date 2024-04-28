@@ -6,9 +6,15 @@ import React from 'react'
 function MainPage() {
     return(
         <div className='MainPage'>
-            <Main />
-            <News />
-            <Releases />
+            <div className='Main'>
+                <Main />
+            </div>
+            <div className='News'>
+                <News />
+            </div>
+            <div className='Releases'>
+                <Releases />
+            </div>
         </div>
     )
 }

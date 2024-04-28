@@ -1,9 +1,9 @@
 .last{
   margin-top: 120px;
   max-height: 450px;
-  border: 1 px solid #fff;
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .last::-webkit-scrollbar{
@@ -19,10 +19,11 @@
 
 .scrolling{
   background-color: #fff;
-  height: 700px;;
+  height: 700px;
+  width: auto;
 }
 
-h1{
+h2{
   position: relative;
   top: 60px;
   color: #ADE320;
@@ -34,10 +35,16 @@ h1{
 }
 
 .releases{
-  z-index: 10;
+  z-index: 8;
+  position: relative;
+  top: 361px;
+  background-color: #ADE320;
+  left: -10px;
+  overflow: hidden;
 }
 
 .hands{
   position: relative;
   top: -160px;
+  left: 367px;
 }

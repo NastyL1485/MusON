@@ -73,11 +73,13 @@
 
     display: flex;
     position: relative;
+    width: 1473px;
     height: 900px;
-    width: 100%;
-    height: 900px;
+    left: -10px;
+    top: -10px;
     background-color:#ADE320;
     z-index: 10;
+    overflow: hidden;
 }
 
 .human{
@@ -104,6 +106,7 @@
     left: -40px;
     z-index: 5;
     /* z-index: 2; */
+    overflow: hidden;
 }
 
 .centralPart{
@@ -170,6 +173,7 @@
     left: 950px;
     top: -270px;
     z-index: 2;
+    overflow: hidden;
 }
 
 .Mus{
