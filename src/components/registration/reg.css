@@ -1,0 +1,21 @@
+.Registration{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1471px;
+    height: 900px;
+    background-color: #ADE320; 
+}
+
+form{
+    position: relative;
+    width: 636px;
+    height: 609px;
+    background-color: white;
+    left: 402px;
+    top: 60px;
+}
+
+.login{
+    
+}
