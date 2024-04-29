@@ -42,6 +42,11 @@
     opacity: 0px;
     color: white;
     background-color: #D93304;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
 }
 
 .registration{
@@ -58,6 +63,11 @@
     background: #ADE320;    
     color: white;
     border: 2px solid white;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
 }
 
 .main{
@@ -151,12 +161,12 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3; */
-    font-family: "Montserrat", sans-serif ;
-    font-size: 24px;
-    font-weight: 400;
     line-height: 29.26px;
     text-align: left;
     grid-gap: 20px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .rock{

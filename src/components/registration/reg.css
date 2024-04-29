@@ -14,8 +14,95 @@ form{
     background-color: white;
     left: 402px;
     top: 60px;
+    border: 6px solid #D93304;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 800;
+}
+
+input{
+    position: absolute;
+    width: 384px;
+    height: 54px;
+    top: 89px;
+    left: 124px;
+    border: none;
+    border-bottom: 1px solid #4E4E4E;
+}
+
+#CreateAccount{
+    position: absolute;
+    left: 140px;
+    top: 371px;
+    width: 350px;
+    height: 59px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #D93304;
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
 }
 
 .login{
-    
+    position: absolute;
+    left: 140px;
+    top: 450px;
+    width: 350px;
+    height: 59px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px 2px 2px 2px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+}
+
+#Login{
+    top: 89px;
+}
+
+#Email{
+    top: 173px;
+}
+
+#Password{
+    top: 257px;
+}
+
+.Error{
+    color: #D93304;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+}
+
+#LoginError{
+    position: absolute;
+    top: 60px;
+    left: 124px;
+}
+
+#EmailError{
+    position: absolute;
+    top: 145px;
+    left: 124px;
+}
+
+#PasswordError{
+    position: absolute;
+    top: 230px;
+    left: 124px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
 }
