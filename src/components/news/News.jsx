@@ -1,5 +1,5 @@
-import './news.css';
-import Headphones from '../Headphones/Headphones';
+import '../../styles/news.css';
+import Headphones from './Headphones/Headphones';
 
 
 function News() {

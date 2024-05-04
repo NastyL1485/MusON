@@ -1,27 +1,50 @@
 .header {
-    color: blue;
+    color: white;
     background-color:#ADE320;
     height: 60px;
+    width: 1473px;
+    margin: -2px;
 }
 
 .header_row{
+    top: 20px;
+    position: relative;
     display: flex;
     column-gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.header_logo{
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
+#PersonalAccountPage{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    background-color: #ADE320;
+    color: white;
 }
 
-.img{
-    width: 20px;
-    height: 20px;
+#ReleasesPage{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 21.94px;
+    border: 0;
+    background-color: #ADE320;
+    color: white;
 }
 
-/* .header_nav{
+#NewsPage{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 21.94px;
+    border: 0;
+    background-color: #ADE320;
+    color: white;
+}
 
-} */
+button{
+    
+}

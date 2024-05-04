@@ -7,7 +7,7 @@
     background-color: #ADE320; 
 }
 
-form{
+#registrationForm{
     position: relative;
     width: 636px;
     height: 609px;
@@ -46,7 +46,7 @@ input{
     line-height: 29.26px;
 }
 
-.login{
+.loginButton{
     position: absolute;
     left: 140px;
     top: 450px;
@@ -62,16 +62,22 @@ input{
     line-height: 29.26px;
 }
 
-#Login{
+#LoginField{
     top: 89px;
+    border: none;
+    border-bottom: 1px solid #4E4E4E;
 }
 
-#Email{
+#EmailField{
     top: 173px;
+    border: none;
+    border-bottom: 1px solid #4E4E4E;
 }
 
-#Password{
+#PasswordField{
     top: 257px;
+    border: none;
+    border-bottom: 1px solid #4E4E4E;
 }
 
 .Error{

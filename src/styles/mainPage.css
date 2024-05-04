@@ -1,15 +1,21 @@
-.MainPage{
+#MainPage{
+    position: absolute;
+    width: 1473px;
+}
+
+#Header{
     position: absolute;
 }
 
-.Main{
+#Main{
     position: absolute;
 }
 
-.News{
+#News{
     position: absolute;
 }
 
-.Releases{
+#Releases{
     position: absolute;
 }
+

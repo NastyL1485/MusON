@@ -1,4 +1,4 @@
-import './main.css';
+import '../main/main.css';
 import Svghuman from '../svgHuman/SvgHuman';
 import Svgmus from '../svgMus/SvgMus';
 import Svgon from '../svgOn/SvgOn';
@@ -15,6 +15,12 @@ function Main(){
         navigate('reg')
     }
 
+    const handleLogin = () => {
+        navigate('login')
+    }
+
+    
+
     return(
         <div className='main'>
             <div className='human'>
@@ -23,15 +29,15 @@ function Main(){
             <div className='centralPart'>
                 <div className='title'>
                     <div className='Mus'>
-                        <Svgmus />
+                      <Svgmus />
                     </div>
                     <div className='On'>
-                        <Svgon />
+                      <Svgon />
                     </div>
                 </div>
                 <div className='buttons'>
-                    <button className='input'>Войти</button>
-                    <button onClick={handleRegistration} className='registration'>Зарегистрироваться</button>
+                    <button onClick={handleLogin} className='input'>Войти</button>
+                    <button onClick={handleRegistration} className='registr'>Зарегистрироваться</button>
                 </div>
             </div>
             <div className='rock'>

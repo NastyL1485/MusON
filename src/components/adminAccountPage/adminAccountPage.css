@@ -1,0 +1,103 @@
+body{
+    background-color: #ADE320;
+    margin: 0px;
+}
+
+.AdminPhoto{
+    position: absolute;
+    top: 100px;
+    left: 470px;
+}
+
+#AdminPhoto{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+}
+
+.AdminLogin{
+    position: absolute;
+    top: 620px;
+    left: 591px;
+}
+
+#AdminLogin{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #22908B;
+}
+
+.Add{
+    position: absolute;
+    top: 760px;
+    left: 508px;
+}
+
+#Add{
+    border: 2px solid white;
+    background-color: #ADE320;
+    color: white;
+    width: 440px;
+    height: 59px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+}
+
+.BestReleases{
+    position: absolute;
+    top: 1000px;
+    left: -2px;
+    width: 1473px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.scrolling{
+    background-color: #fff;
+    height: 700px;
+    width: auto;
+}
+
+#BestReleases{
+    position: relative;
+    top: 60px;
+    color: #D93304;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 43.88px;
+    text-align: center;
+}
+
+.last{
+    margin-top: 120px;
+    max-height: 450px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+  
+.last::-webkit-scrollbar{
+    width: 0;
+}
+  
+.last .card{
+    min-width: 400px;
+    height: 400px;
+    line-height: 362px;
+    margin-right: 3px;
+}
+
+.FireFlame{
+    position: absolute;
+    top: 1472px;
+    left: 1076px;
+}

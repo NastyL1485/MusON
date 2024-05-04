@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './login.css';
+import {useNavigate} from 'react-router-dom';
 
 
 function Login() {
@@ -10,6 +11,17 @@ function Login() {
     const [loginError, setLoginError] = useState('Логин не может быть пустым!')
     const [passwordError, setPasswordError] = useState('Пароль не может быть пустым!')
     const [formValid, setFormValid] = useState(false)
+
+    const navigate = useNavigate();
+
+
+    const handleRegistration = () => {
+        navigate('reg')
+    }
+
+    const handleAccount = () => {
+        navigate('personalAccount')
+    }
 
     useEffect( () => {
         if (loginError || passwordError){
@@ -58,12 +70,12 @@ function Login() {
     return (
         <div className="Login">
             <form>
-                {(loginDirty && loginError) && <div className="Error" id='LoginError'>{loginError}</div>}
+                {(loginDirty && loginError) && <div className="Error" id='LoginErrorMessange'>{loginError}</div>}
                 <input onChange={e => loginHandler(e)} value={login} onBlur={e => blurHadler(e)} name="login" type="login" placeholder="Логин" id='Login'></input>
-                {(passwordDirty && passwordError) && <div className="Error" id='PasswordError'>{passwordError}</div>}
+                {(passwordDirty && passwordError) && <div className="Error" id='PasswordErrorMessange'>{passwordError}</div>}
                 <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHadler(e)} name="password" type="password" placeholder="Пароль" id='Password'></input>
-                <button disabled={!formValid} type="submit" id='login'>Войти</button>
-                <button className='registration'>Зарегистрироваться</button>
+                <button onClick={handleAccount} disabled={!formValid} type="submit" id='login'>Войти</button>
+                <button onClick={handleRegistration} className='registration'>Зарегистрироваться</button>
             </form>
         </div>
     )

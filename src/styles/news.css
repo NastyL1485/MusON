@@ -1,15 +1,17 @@
 .NewsBlock{
-    position: absolute;
+    position: relative;
     display: flex;
     width: 1473px;
     height: 1100px;
     z-index: 9;
-    top: -12px;
-    left: -130px;
+    top: 890px;
+    left: 0px;
     /* margin-left: -130px; */
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #ADE320; 
+    padding: 0;
+    margin: 0;
 }
 
 .News{

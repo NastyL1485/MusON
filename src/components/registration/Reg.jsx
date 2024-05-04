@@ -1,5 +1,6 @@
 import './reg.css';
 import { useEffect, useState } from "react"
+import {useNavigate} from 'react-router-dom';
 
 
 function Registration() {
@@ -13,6 +14,20 @@ function Registration() {
     const [emailError, setEmailError] = useState('Почта не может быть пустой!')
     const [passwordError, setPasswordError] = useState('Пароль не может быть пустым!')
     const [formValid, setFormValid] = useState(false)
+
+    const navigate = useNavigate();
+
+    const handleAdmin = () => {
+        navigate('adminAccount')
+    }
+
+    // const handleAccount = () => {
+    //     navigate('personalAccount')
+    // }
+
+    const handleLogin = () => {
+        navigate('login')
+    }
 
     useEffect( () => {
         if (loginError || emailError || passwordError){
@@ -73,15 +88,15 @@ function Registration() {
 
     return (
         <div className="Registration">
-            <form>
+            <form id='registrationForm'>
                 {(loginDirty && loginError) && <div className="Error" id='LoginError'>{loginError}</div>}
-                <input onChange={e => loginHandler(e)} value={login} onBlur={e => blurHadler(e)} name="login" type="login" placeholder="Логин" id='Login'></input>
+                <input onChange={e => loginHandler(e)} value={login} onBlur={e => blurHadler(e)} name="login" type="login" placeholder="Логин" id='LoginField'></input>
                 {(emailDirty && emailError) && <div className="Error" id='EmailError'>{emailError}</div>}
-                <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHadler(e)} name="email" type="text" placeholder="Почта" id='Email'></input>
+                <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHadler(e)} name="email" type="text" placeholder="Почта" id='EmailField'></input>
                 {(passwordDirty && passwordError) && <div className="Error" id='PasswordError'>{passwordError}</div>}
-                <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHadler(e)} name="password" type="password" placeholder="Пароль" id='Password'></input>
-                <button disabled={!formValid} type="submit" id='CreateAccount'>Создать аккаунт</button>
-                <button className='login'>Уже есть аккаунт</button>
+                <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHadler(e)} name="password" type="password" placeholder="Пароль" id='PasswordField'></input>
+                <button onClick={handleAdmin} disabled={!formValid} type="submit" id='CreateAccount'>Создать аккаунт</button>
+                <button onClick={handleLogin} className='loginButton'>Уже есть аккаунт</button>
             </form>
         </div>
     )

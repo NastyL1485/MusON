@@ -37,10 +37,13 @@ h2{
 .releases{
   z-index: 8;
   position: relative;
-  top: 361px;
+  top: 1960px;
+  width: 1473px;
   background-color: #ADE320;
-  left: -10px;
+  left: 0px;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .hands{
