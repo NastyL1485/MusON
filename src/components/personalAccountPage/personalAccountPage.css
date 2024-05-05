@@ -1,6 +1,12 @@
 body{
-    background-color: #ADE320;
     margin: 0px;
+}
+
+.PersonalAccountPage{
+    background-color: #ADE320;
+    width: 100%;
+    height: 1880px;
+    position: absolute;
 }
 
 .UsersPhoto{

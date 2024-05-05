@@ -4,18 +4,14 @@
     height: 60px;
     width: 1473px;
     margin: -2px;
-}
-
-.header_row{
     top: 20px;
-    position: relative;
-    display: flex;
-    column-gap: 30px;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
 }
 
 #PersonalAccountPage{
+    position: relative;
+    top: 20px;
     font-size: 18px;
     font-weight: 600;
     line-height: 21.94px;
@@ -26,6 +22,8 @@
 }
 
 #ReleasesPage{
+    position: relative;
+    top: 20px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -36,6 +34,8 @@
 }
 
 #NewsPage{
+    position: relative;
+    top: 20px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -43,8 +43,4 @@
     border: 0;
     background-color: #ADE320;
     color: white;
-}
-
-button{
-    
 }

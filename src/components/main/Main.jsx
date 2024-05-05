@@ -19,8 +19,6 @@ function Main(){
         navigate('login')
     }
 
-    
-
     return(
         <div className='main'>
             <div className='human'>

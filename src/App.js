@@ -8,8 +8,9 @@ import Registration from './components/registration/Reg';
 import Login from './components/registration/Login'
 import PersonalAccountPage from './components/personalAccountPage/PersonalAccountPage';
 import AdminAccountPage from './components/adminAccountPage/AdminAccountPage';
-// import Releases from './components/releases/Releases';
-// import News from './components/news/News';
+import CreateNews from './components/createNews/CreateNews';
+import CreateRelease from './components/createRelease/CreateRelease';
+import NewsPage from './components/newsPage/NewsPage';
 
 
 function App() {
@@ -25,8 +26,11 @@ function App() {
             <Route path="/reg/personalAccount" element={<PersonalAccountPage/>} />
             <Route path='/reg/adminAccount' element={<AdminAccountPage/>} />
             <Route path='/login/adminAccount' element={<AdminAccountPage/>} />
-            {/* <Route path="/releases" element={<Releases/>} />
-            <Route path="/news" element={<News/>} /> */}
+            <Route path='/reg/adminAccount/createNews' element={<CreateNews/>}/>
+            <Route path='/reg/adminAccount/createRelease' element={<CreateRelease />} />
+            <Route path='/reg/adminAccount/createNews/createRelease' element={<CreateRelease />} />
+            <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} />
+            <Route path='/newsPage' element={<NewsPage/>}/>
         </Routes>
     </BrowserRouter>                                                              
   );

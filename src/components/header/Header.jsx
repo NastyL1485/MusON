@@ -10,15 +10,17 @@ function Header () {
         navigate('personalAccount')
     }
 
+    const handleNewsPage = () => {
+        navigate('newsPage')
+    }
+
     return(
         <header className = "header">
-            <div className="container">
-                <div className="header_row">
-                    <div className='ReleasesPage'><button id='ReleasesPage'>Релизы</button></div>
-                    <div className='PersonalAccountPage'><button onClick={handleAccount} id='PersonalAccountPage'>АККАУНТ</button></div>
-                    <div className='NewsPage'><button id='NewsPage'>Новости</button></div>
-                </div>
-            </div>
+            
+                    <div><button id='ReleasesPage'>Релизы</button></div>
+                    <div id='PersonalAccountPageButton'><button onClick={handleAccount} id='PersonalAccountPage'>АККАУНТ</button></div>
+                    <div><button onClick={handleNewsPage} id='NewsPage'>Новости</button></div>
+            
         </header>
     )
 }

@@ -1,8 +1,17 @@
 import './adminAccountPage.css'
 import Header from '../header/Header'
 import FireFlame from '../personalAccountPage/imgPersonal/FireFlame'
+// import CreateNews from '../createNews/CreateNews'
+import { useNavigate } from 'react-router-dom'
 
 function AdminAccountPage() {
+
+    const navigate = useNavigate();
+    
+    const handleCreateNews = () => {
+        navigate('createNews')
+    }
+
     return(
         <div className='AdminAccountPage'>
             <Header />
@@ -13,7 +22,7 @@ function AdminAccountPage() {
                 <p id='AdminLogin'>razriv2001</p>
             </div>
             <div className='Add'>
-                <button id='Add'>Добавить релиз/новость</button>
+                <button id='Add' onClick={handleCreateNews}>Добавить релиз/новость</button>
             </div>
             <div className='BestReleases'>
                 <div className="scrolling">

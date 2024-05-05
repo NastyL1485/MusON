@@ -1,14 +1,21 @@
+import { useNavigate } from 'react-router-dom';
 import '../../styles/news.css';
 import Headphones from './Headphones/Headphones';
 
 
 function News() {
+    const navigate = useNavigate();
+
+    const handleNewsPage = () => {
+        navigate('newsPage')
+    }
+
     return(
         <div className='NewsBlock'>
             <div className='News'>
                 <div className='Title'>
                     <div className='Text'><p>Горячие новости</p></div>
-                    <button className='MoreNews'>ещё новости</button>
+                    <button className='MoreNews' onClick={handleNewsPage}>ещё новости</button>
                 </div>
                 <div className='NewsB'>
                     <div className='BigNews'>

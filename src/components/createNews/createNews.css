@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+}
+
+.CreateNews{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22908B;
+}
+
+#NewsTitle{
+    position: absolute;
+    width: 770px;
+    height: 80px;
+    top: 254px;
+    left: 335px;
+    border-radius: 60px;
+    border: 2px solid #FFFFFF
+}
+
+#NewsContent{
+    position: absolute;
+    width: 770px;
+    height: 293px;
+    top: 364px;
+    left: 335px;
+    border-radius: 30px;
+}
+
+#AddImg{
+    position: absolute;
+    width: 350px;
+    height: 59px;
+    top: 677px;
+    left: 335px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    background-color: #22908B;
+}
+
+#TextAddImg{
+    position: absolute;
+    top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+    color: white;
+}
+
+#NewsContent{
+    position: absolute;
+    top: 364px;
+    left: 335px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    justify-self:start;
+}
+
+.switch-btn {
+    position: absolute;
+    top: 120px;
+    left: 576px;
+    display: inline-block;
+    width: 228px; /* ширина переключателя */
+    height: 58px; /* высота переключателя */
+    border-radius: 60px; /* радиус скругления */
+    background: #D93304;  /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: 5px solid #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 5s; /* анимация */
+  }
+  .switch-btn::after {
+    content: "";
+    height: 58px; /* высота кнопки */
+    width: 58px; /* ширина кнопки */
+    border-radius: 29px; /* радиус кнопки */
+    background:  #22908B;/* цвет кнопки */
+    top: 0px; /* положение кнопки по вертикали относительно основы */
+    left: 0px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 5s; /* анимация */
+    box-shadow: 0 0 10px 0 #999999; /* тень */
+    position: absolute;
+    z-index: 1;
+  }
+  .switch-on {
+    background:  #D93304;
+    box-shadow: inset 0 0 10px 0 #999999; /* тень */
+  }
+  .switch-on::after {
+    left: 170px;
+    background: #22908B;
+  }
+
+#TextOfSwitcherNews{
+    position: absolute;
+    width: 152px;
+    height: 34px;
+    top: -15px;
+    left: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    text-align: left;
+    color: white;
+}
