@@ -1,0 +1,283 @@
+body{
+    margin: 0px;
+}
+
+.ReleasePage{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: #ADE320;
+}
+
+.contentOfRelease{
+    position: relative;
+    top: 140px;
+    height: 460px;
+    width: 1300px;
+    display: flex;
+    left: 170px;
+}
+
+.ReleaseImgPlace{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 160px;
+    background-color: white;
+}
+
+.ReleaseInfo{
+    position: absolute;
+    width: 680px;
+    height: 120px;
+    left: 380px;
+}
+
+.ReleaseTitle{
+    position: absolute;
+    width: 680px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 56.07px;
+    text-align: left;
+    color: #fff;
+}
+
+.ReleaseAuthor{
+    position: absolute;
+    width: 680px;
+    height: 60px;
+    top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 56.07px;
+    text-align: left;
+    color: #fff;
+}
+
+.Download{
+    position: absolute;
+    width: 264px;
+    height: 60px;
+    top: 150px;
+    left: 380px;
+}
+
+.Comment{
+    position: absolute;
+    width: 374px;
+    height: 60px;
+    left: 659px;
+    top: 150px;
+}
+
+.Favourites{
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    left: 1048px;
+    top: 140px;
+}
+
+.DownloadButton{
+    width: 264px;
+    height: 59px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    background-color: #ADE320;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.CommentButton{
+    width: 374px;
+    height: 59px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #D93304;
+    background-color: #D93304;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.FreshComments{
+    position: relative;
+    left: 178px;
+    width: 1084px;
+    height: 860px;
+}
+
+.title-of-frame{
+    position: absolute;
+    top: 100px;
+    width: 1084px;
+    height: 100px;
+}
+
+#fresh-Comments{
+    position: relative;
+    top: -60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    color: #22908B;
+}
+
+.freshCommentsBlock{
+    height: 600px;
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 60px;
+}
+
+.CommentField{
+    position: relative;
+    background-color: white;
+    width: 1084px;
+    height: 301px;
+    border-radius: 60px 0px 0px 0px;
+    align-self: bottom;
+    align-items: start;
+    display: flex;
+    box-shadow: 10px 10px 15px #22908B;
+}
+
+.User{
+    position: relative;
+    /* background-color: blueviolet; */
+    width: 994px;
+    height: 60px;
+    /* border: 1px solid navy; */
+    left: 45px;
+    display: flex;
+}
+
+.user-photo{
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.username{
+    position: relative;
+    width: 934px;
+    height: 45px;
+    left: 30px;
+    top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.comment-text{
+    position: absolute;
+    top: 90px;
+    width: 996px;
+    min-height: 100px;
+    left: 44px;
+    max-height: 200px;
+}
+
+.comment-content{
+    position: absolute;
+    min-height: 100px;
+    left: 44px;
+    top: -30px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+.MyComment{
+    position: relative;
+    height: 705px;
+    width: 1084px;
+    left: 178px;
+}
+
+.title-my-comment{
+    position: relative;
+    width: 1040px;
+    height: 50px;
+    left: 44px;
+    top: 200px;
+    align-items: center;
+}
+
+#title-my-comment{
+    position: relative;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: left;
+    color: #D93304;
+}
+
+.my-comment-field{
+    position: relative;
+    width: 1084px;
+    height: 299px;
+    top: 170px;
+    left: -124px;
+}
+
+#my-comment-content{
+    position: relative;
+    top: 60px;
+    left: 125px;
+    width: 1084px;
+    height: 300px;
+    box-shadow: 10px 10px 15px #D93304;
+}
+
+.sendButton{
+    position: relative;
+    top: 280px;
+}
+
+.send-button{
+    position: relative;
+    width: 254px;
+    height: 59px;
+    left: 786px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    background-color: #D93304;
+}
+
+.space{
+    position: absolute;
+    background-color:#ADE320;
+    width: 100%;
+    height: 100px;
+}

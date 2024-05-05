@@ -12,6 +12,7 @@ import CreateNews from './components/createNews/CreateNews';
 import CreateRelease from './components/createRelease/CreateRelease';
 import NewsPage from './components/newsPage/NewsPage';
 import ReleasesPage from './components/releasesPage/ReleasesPage';
+import ReleasePage from './components/releasePage/ReleasePage';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} />
             <Route path='/newsPage' element={<NewsPage/>} />
             <Route path='/releasesPage' element={<ReleasesPage/>} />
+            <Route path='/releasesPage/release' element={<ReleasePage/>} />
         </Routes>
     </BrowserRouter>                                                              
   );
