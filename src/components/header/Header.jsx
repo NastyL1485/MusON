@@ -14,10 +14,14 @@ function Header () {
         navigate('newsPage')
     }
 
+    const handleReleasesPage = () => {
+        navigate('releasesPage')
+    }
+
     return(
         <header className = "header">
             
-                    <div><button id='ReleasesPage'>Релизы</button></div>
+                    <div><button id='ReleasesPage' onClick={handleReleasesPage}>Релизы</button></div>
                     <div id='PersonalAccountPageButton'><button onClick={handleAccount} id='PersonalAccountPage'>АККАУНТ</button></div>
                     <div><button onClick={handleNewsPage} id='NewsPage'>Новости</button></div>
             

@@ -11,6 +11,7 @@ import AdminAccountPage from './components/adminAccountPage/AdminAccountPage';
 import CreateNews from './components/createNews/CreateNews';
 import CreateRelease from './components/createRelease/CreateRelease';
 import NewsPage from './components/newsPage/NewsPage';
+import ReleasesPage from './components/releasesPage/ReleasesPage';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
             <Route path='/reg/adminAccount/createRelease' element={<CreateRelease />} />
             <Route path='/reg/adminAccount/createNews/createRelease' element={<CreateRelease />} />
             <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} />
-            <Route path='/newsPage' element={<NewsPage/>}/>
+            <Route path='/newsPage' element={<NewsPage/>} />
+            <Route path='/releasesPage' element={<ReleasesPage/>} />
         </Routes>
     </BrowserRouter>                                                              
   );
