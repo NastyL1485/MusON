@@ -17,16 +17,37 @@ function Registration() {
 
     const navigate = useNavigate();
 
-    const handleAdmin = () => {
-        navigate('adminAccount')
+    const handleAccount = (e) => {
+        e.preventDefault()
+        let username = document.getElementById('login-field').value;
+        let email = document.getElementById('email-field').value;
+        let password = document.getElementById('password-field').value;
+        
+        let xhr = new XMLHttpRequest();
+        let url = "http://127.0.0.1:8000/auth/jwt/register";
+                
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        
+        xhr.onload = function () {
+        if (xhr.status === 201) {
+            alert("вы успешно зарегестрированы")
+            // window.location.href = "/account"
+        } else if (xhr.status === 400){
+            alert("Пользователь уже зарегистрирован")
+        } else {
+            alert("Данные введены неверно или отсутствуют")
+        }
+                
+        }
+        
+        var data = JSON.stringify({"email": email, "password": password, "is_active": true, "is_superuser": false, "is_verified": false, "username": username, "phone_number": "string", "birthdate": "string", "role_id": 2});
+        
+        xhr.send(data)
     }
 
-    // const handleAccount = () => {
-    //     navigate('personalAccount')
-    // }
-
     const handleLogin = () => {
-        navigate('login')
+        navigate('/login')
     }
 
     useEffect( () => {
@@ -45,6 +66,8 @@ function Registration() {
         } else {setLoginError("")}
     }
 
+
+
     const emailHandler = (e) => {
         setEmail(e.target.value)
         const reEmail = /^[a-zA-Z0-9_.+=]+@[a-zA-Z0-0-]+\.[a-zA-Z0-9]+$/;
@@ -55,10 +78,6 @@ function Registration() {
 
     const passwordHandler = (e) => {
         setPassword(e.target.value)
-        // const rePass = /^[@#][A-Za-z0-9]{7,13}$/;
-        // if (!rePass.test(String(e.target.value).toLowerCase())){
-        //     setPasswordError('Пароль должен содержать от 7 до 12 символов')
-        // } else {setPasswordError('')}
         if (e.target.value.length < 3 || e.target.value.length > 8){
             setPasswordError('Пароль должен быть длинее 3 и короче 8 символов!')
             if(e.target.value){
@@ -69,7 +88,7 @@ function Registration() {
         }
     }
 
-    const blurHadler = (e) => {
+    const blurHandler = (e) => {
         // eslint-disable-next-line default-case
         switch (e.target.name) {
             case 'login' :
@@ -84,22 +103,56 @@ function Registration() {
         }
     }
 
+    // const handleAccount = () => {
+    //     let PostLogin = document.getElementById('login-field').value;
+    //     let PostEmail = document.getElementById('email-field').value;
+    //     let PostPassword = document.getElementById('password-field').value;
+
+    //     const data = {
+    //         "email": PostEmail,
+    //         "password": PostPassword,
+    //         "is_active": true,
+    //         "is_superuser": false,
+    //         "is_verified": false,
+    //         "username": PostLogin,
+    //         "phone_number": "string",
+    //         "birthdate": "string",
+    //         "role_id": 0
+    //       };
+      
+    //       axios.post("http://127.0.0.1:8000/auth/jwt/register", data).then((response) => {
+    //           if (response.status === 201) {
+    //             alert("Вы успешно зарегистрированы");
+    //             navigate('/personalAccount');
+    //           } else if (response.status === 400) {
+    //             alert("Пользователь уже зарегистрирован");
+    //           } else {
+    //             alert("Данные введены неверно или отсутствуют");
+    //           }
+    //         })
+    //         .catch((error) => {
+    //           console.error(error);
+    //           alert("Произошла ошибка. Попробуйте позже.");
+    //         });
+    // }
+
     
 
     return (
         <div className="Registration">
             <form id='registrationForm'>
                 {(loginDirty && loginError) && <div className="Error" id='LoginError'>{loginError}</div>}
-                <input onChange={e => loginHandler(e)} value={login} onBlur={e => blurHadler(e)} name="login" type="login" placeholder="Логин" id='LoginField'></input>
+                <input id='login-field' onChange={e => loginHandler(e)} value={login} onBlur={e => blurHandler(e)} name="login" type="login" placeholder="Логин"></input>
                 {(emailDirty && emailError) && <div className="Error" id='EmailError'>{emailError}</div>}
-                <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHadler(e)} name="email" type="text" placeholder="Почта" id='EmailField'></input>
+                <input id='email-field' onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name="email" type="text" placeholder="Почта"></input>
                 {(passwordDirty && passwordError) && <div className="Error" id='PasswordError'>{passwordError}</div>}
-                <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHadler(e)} name="password" type="password" placeholder="Пароль" id='PasswordField'></input>
-                <button onClick={handleAdmin} disabled={!formValid} type="submit" id='CreateAccount'>Создать аккаунт</button>
+                <input id='password-field' onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)} name="password" type="password" placeholder="Пароль"></input>
+                <button onClick={handleAccount} disabled={!formValid} type="submit" id='CreateAccount'>Создать аккаунт</button>
                 <button onClick={handleLogin} className='loginButton'>Уже есть аккаунт</button>
             </form>
         </div>
     )
+
 }
 
 export default Registration

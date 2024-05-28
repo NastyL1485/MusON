@@ -7,7 +7,7 @@ function ReleasesPage() {
     const navigate = useNavigate()
 
     const handleReleasePage = () => {
-        navigate('release')
+        navigate('/release')
     }
 
     return(

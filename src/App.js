@@ -17,26 +17,50 @@ import ReleasePage from './components/releasePage/ReleasePage';
 
 function App() {
   return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<MainPage/>} />
-            <Route path="/reg" element={<Registration/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/reg/login" element={<Login/>} />
-            <Route path="/login/reg" element={<Registration/>} />
-            <Route path="/login/personalAccount" element={<PersonalAccountPage/>} />
-            <Route path="/reg/personalAccount" element={<PersonalAccountPage/>} />
-            <Route path='/reg/adminAccount' element={<AdminAccountPage/>} />
-            <Route path='/login/adminAccount' element={<AdminAccountPage/>} />
-            <Route path='/reg/adminAccount/createNews' element={<CreateNews/>}/>
-            <Route path='/reg/adminAccount/createRelease' element={<CreateRelease />} />
-            <Route path='/reg/adminAccount/createNews/createRelease' element={<CreateRelease />} />
-            <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} />
-            <Route path='/newsPage' element={<NewsPage/>} />
-            <Route path='/releasesPage' element={<ReleasesPage/>} />
-            <Route path='/releasesPage/release' element={<ReleasePage/>} />
-        </Routes>
-    </BrowserRouter>                                                              
+    // <BrowserRouter>
+    //     <Routes>
+    //         <Route path="/" element={<MainPage/>} />
+    //         <Route path="/reg" element={<Registration/>} />
+    //         <Route path="/login" element={<Login/>} />
+    //         <Route path="/reg/login" element={<Login/>} />
+    //         <Route path="/login/reg" element={<Registration/>} />
+    //         <Route path="/login/personalAccount" element={<PersonalAccountPage/>} />
+    //         <Route path="/reg/personalAccount" element={<PersonalAccountPage/>} />
+    //         <Route path="/reg/adminAccount" element={<AdminAccountPage/>} />
+    //         {/* <Route path='/login/adminAccount' element={<AdminAccountPage/>} />
+    //         <Route path='/reg/adminAccount/createNews' element={<CreateNews/>}/>
+    //         <Route path='/reg/adminAccount/createRelease' element={<CreateRelease />} /> */}
+    //         {/* <Route path='/reg/adminAccount/createNews/createRelease' element={<CreateRelease />} />
+    //         <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} /> */}
+    //         <Route path="/createRelease" element={<CreateRelease />} />
+    //         <Route path="/createNews" element={<CreateNews />} />
+    //         <Route path="/newsPage" element={<NewsPage/>} />
+    //         <Route path="/releasesPage" element={<ReleasesPage/>} />
+    //         {/* <Route path='/releasesPage/release' element={<ReleasePage/>} /> */}
+    //         <Route path="/release" element={<ReleasePage/>} />
+    //     </Routes>
+    // </BrowserRouter>   
+  <BrowserRouter>  
+    <Routes>
+        <Route path="/" element={<MainPage/>} />
+        <Route path="/reg" element={<Registration/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/personalAccount" element={<PersonalAccountPage/>} />
+        <Route path="/reg/personalAccount" element={<PersonalAccountPage/>} />
+        <Route path="../adminAccount" element={<AdminAccountPage/>} />
+        <Route path='/login/adminAccount' element={<AdminAccountPage/>} />
+        <Route path='/reg/adminAccount/createNews' element={<CreateNews/>}/>
+        <Route path='/reg/adminAccount/createRelease' element={<CreateRelease />} />
+        {/* <Route path='/reg/adminAccount/createNews/createRelease' element={<CreateRelease />} />
+        <Route path='/reg/adminAccount/createNews/createRelease/createNews' element={<CreateNews />} /> */}
+        <Route path="../createRelease" element={<CreateRelease />} />
+        <Route path="../createNews" element={<CreateNews />} />
+        <Route path="/newsPage" element={<NewsPage/>} />
+        <Route path="/releasesPage" element={<ReleasesPage/>} />
+        {/* <Route path='/releasesPage/release' element={<ReleasePage/>} /> */}
+        <Route path="../release" element={<ReleasePage/>} />
+    </Routes>  
+  </BrowserRouter>
   );
 }
 

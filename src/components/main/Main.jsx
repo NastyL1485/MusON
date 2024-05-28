@@ -12,11 +12,11 @@ function Main(){
 
 
     const handleRegistration = () => {
-        navigate('reg')
+        navigate('/reg')
     }
 
     const handleLogin = () => {
-        navigate('login')
+        navigate('/login')
     }
 
     return(

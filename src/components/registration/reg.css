@@ -62,19 +62,19 @@ input{
     line-height: 29.26px;
 }
 
-#LoginField{
+#login-field{
     top: 89px;
     border: none;
     border-bottom: 1px solid #4E4E4E;
 }
 
-#EmailField{
+#email-field{
     top: 173px;
     border: none;
     border-bottom: 1px solid #4E4E4E;
 }
 
-#PasswordField{
+#password-field{
     top: 257px;
     border: none;
     border-bottom: 1px solid #4E4E4E;
