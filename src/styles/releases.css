@@ -51,3 +51,13 @@ h2{
   top: -160px;
   left: 367px;
 }
+
+#cardButton{
+  min-width: 362px;
+  height: 362px;
+  line-height: 362px;
+  margin-right: 3px;
+  background-image: url(../components/releases/cardsImg/cardMore.png);
+  border: 0;
+}
+

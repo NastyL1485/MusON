@@ -6,18 +6,18 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #ADE320;
 }
 
 .content{
     width: 100%;
-    height: 690px;
+    height: auto;
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+    background-color: #ADE320;
 }
 
 .release{
@@ -44,3 +44,4 @@ body{
     transition: 0.2s;
     box-shadow: 5px 5px 15px #D93304;
 }
+

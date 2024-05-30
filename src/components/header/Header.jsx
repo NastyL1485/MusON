@@ -7,15 +7,15 @@ function Header () {
 
 
     const handleAccount = () => {
-        navigate('personalAccount')
+        navigate('/personalAccount')
     }
 
     const handleNewsPage = () => {
-        navigate('newsPage')
+        navigate('/newsPage')
     }
 
     const handleReleasesPage = () => {
-        navigate('releasesPage')
+        navigate('/releasesPage')
     }
 
     return(

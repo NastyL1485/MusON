@@ -13,8 +13,19 @@ body{
     position: absolute;
     width: 770px;
     height: 80px;
-    top: 254px;
-    left: 335px;
+    top: 0px;
+    left: 0px;
+    border-radius: 60px;
+    border: 2px;
+    gap: 10px;
+}
+
+#NameOfArtist{
+  position: absolute;
+    width: 770px;
+    height: 80px;
+    top: 100px;
+    left: 0px;
     border-radius: 60px;
     border: 2px;
     gap: 10px;
@@ -24,26 +35,26 @@ body{
     position: absolute;
     width: 350px;
     height: 59px;
-    top: 373px;
-    left: 355px;
-    padding: 15px 60px 15px 60px;
+    top: 200px;
+    left: 0px;
+    padding: 0;
     gap: 10px;
     border-radius: 30px;
     border: 2px solid #FFFFFF;
-    background-color: #D93304;
+    background-color: white;
 }
 
 #AddAudio{
     position: absolute;
     width: 395px;
     height: 59px;
-    top: 373px;
-    left: 710px;
-    padding: 15px 60px 15px 60px;
+    top: 200px;
+    left: 355px;
+    padding: 0 10px 0 0 ;
     gap: 10px;
     border-radius: 30px;
     border: 2px solid #FFFFFF;
-    background-color: #D93304;
+    background-color: white;
 }
 
 .switch-btn {
@@ -98,3 +109,40 @@ body{
     text-align: left;
     color: white;
   }
+
+#releaseForm{
+  position: relative;
+  border: 0;
+  background-color: #D93304;
+  top: 150px;
+  height: 400px;
+}
+
+#SendForm{
+  position: relative;
+    width: 395px;
+    height: 59px;
+    top: 300px;
+    left: 0px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    background-color: #D93304;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    text-align: left;
+    color: white;
+}
+
+#Content{
+  position: relative;
+  top: 280px;
+  left: 0px;
+  width: 600px;
+  gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+}

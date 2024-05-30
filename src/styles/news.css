@@ -165,3 +165,37 @@ p{
     top: 400px;
     right: -75px;
 }
+
+#newsTitleDB{
+    width: 100px;
+    height: 10px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    left: 80px;
+    top: -15px;
+}
+
+.contentBack1{
+    position: absolute;
+    width: 1200px;
+    background-color: #B2D8D6;
+    height: 700px;
+    border-radius: 70px;
+    z-index: 3;
+}
+
+.news1{
+    position: absolute;
+    background-color: white;
+    border: 6px solid #22908B;
+    width: 1200px;
+    height: 580px;
+    top: 160px;
+    left: 0px;
+    border-radius: 60px;
+    z-index: 3;
+}
+

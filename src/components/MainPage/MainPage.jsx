@@ -6,8 +6,9 @@ import '../../styles/mainPage.css'
 import React from 'react'
 
 function MainPage() {
+
     return(
-        <div id='MainPage'>
+        <div id='MainPage'> 
             <Header/>
             <div id='Main'>
                 <Main />

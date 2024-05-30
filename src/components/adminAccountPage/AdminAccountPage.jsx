@@ -3,13 +3,40 @@ import Header from '../header/Header'
 import FireFlame from '../personalAccountPage/imgPersonal/FireFlame'
 // import CreateNews from '../createNews/CreateNews'
 import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 function AdminAccountPage() {
 
     const navigate = useNavigate();
     
     const handleCreateNews = () => {
-        navigate('createNews')
+        navigate('/createNews')
+    }
+
+    let [userdata, setUserdata] = useState();
+    let [status, setStatus] = useState();
+
+    useEffect(() => {
+        thisUser();
+    }, []);
+    
+    function thisUser() {
+        fetch("http://127.0.0.1:8000/users/me", {
+            headers: {
+                'Content-type': 'application/json',
+              },
+            method: 'GET',
+            credentials: 'include',
+        })
+            .then(data => data.json())
+
+            .then(data => {
+                setUserdata(data);
+                console.log(data)
+                // if (data.detail == 'Unauthorized' || data.id !== 2){
+                //     window.location.href = '/login';
+                // }
+            })
     }
 
     return(

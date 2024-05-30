@@ -13,8 +13,8 @@ body{
     position: absolute;
     width: 770px;
     height: 80px;
-    top: 254px;
-    left: 335px;
+    top: 0px;
+    left: 0px;
     border-radius: 60px;
     border: 2px solid #FFFFFF
 }
@@ -23,17 +23,17 @@ body{
     position: absolute;
     width: 770px;
     height: 293px;
-    top: 364px;
-    left: 335px;
+    top: 100px;
+    left: 0px;
     border-radius: 30px;
 }
 
-#AddImg{
+#sendform{
     position: absolute;
     width: 350px;
     height: 59px;
-    top: 677px;
-    left: 335px;
+    top: 400px;
+    left: 0px;
     padding: 15px 60px 15px 60px;
     gap: 10px;
     border-radius: 30px;
@@ -54,8 +54,8 @@ body{
 
 #NewsContent{
     position: absolute;
-    top: 364px;
-    left: 335px;
+    top: 100px;
+    left: 0px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -107,6 +107,39 @@ body{
     height: 34px;
     top: -15px;
     left: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    text-align: left;
+    color: white;
+}
+
+#AddImgNews{
+    position: absolute;
+    width: 280px;
+    height: 26px;
+    top: 400px;
+    left: 355px;
+    padding: 15px 60px 15px 60px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    background-color: #22908B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    text-align: left;
+    color: white;
+}
+
+#newsForm{
+    position: relative;
+    border: 0;
+    background-color: #22908B;
+    top: 150px;
+    height: 400px;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 500;

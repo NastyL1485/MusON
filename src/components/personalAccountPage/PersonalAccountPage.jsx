@@ -1,8 +1,35 @@
 import './personalAccountPage.css'
 import FireFlame from './imgPersonal/FireFlame'
 import Header from '../header/Header'
+import { useState, useEffect } from 'react';
 
 function PersonalAccountPage() {
+    let [userdata, setUserdata] = useState();
+    let [status, setStatus] = useState();
+
+    useEffect(() => {
+        thisUser();
+    }, []);
+    
+    function thisUser() {
+        fetch("http://127.0.0.1:8000/users/me", {
+            headers: {
+                'Content-type': 'application/json',
+              },
+            method: 'GET',
+            credentials: 'include',
+        })
+            .then(data => data.json())
+
+            .then(data => {
+                setUserdata(data);
+                console.log(data)
+                if (data.role_id == 2){
+                    window.location.href = '/adminAccount';
+                }
+            })
+    }
+
     return(
         <div className='PersonalAccountPage'>
             <Header />

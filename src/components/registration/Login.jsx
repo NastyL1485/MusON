@@ -77,7 +77,7 @@ function Login() {
 
         xhr.onload = function () {
         if (xhr.status === 204) {
-            navigate('/personalAccount');
+            navigate('/adminAccount');
         } else {
             alert("Неверные логин или пароль")
         }

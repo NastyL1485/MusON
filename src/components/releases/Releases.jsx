@@ -1,7 +1,15 @@
 import Svghands from '../releases/hands/SvgHands';
 import '../../styles/releases.css';
+import { useNavigate } from 'react-router-dom';
 
 function Releases() {
+
+    const navigate = useNavigate();
+
+    const handlerReleasesPage = () => {
+        navigate('/releasesPage')
+    }
+
     return(
         <div className="releases">
             <div className="scrolling">
@@ -20,7 +28,7 @@ function Releases() {
                         <img src={require('../../components/releases/cardsImg/card4.png')} alt='card4'></img>
                         </div>
                     <div className="card">
-                        <img src={require('../../components/releases/cardsImg/cardMore.png')} alt='cardMore'></img>
+                        <button id='cardButton' alt='cardMore' onClick={handlerReleasesPage}></button>
                     </div>
                 </div>
             </div>
